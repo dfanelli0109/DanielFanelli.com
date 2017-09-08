@@ -61,6 +61,9 @@
                     <li class="navli navlinks">
                         <a href="#cbanner">Contact</a>
                     </li>
+                    <li class="navli navlinks">
+                        <a id="tel1" href="tel:4076150533">Call Daniel</a>
+                      </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -186,13 +189,12 @@
 </div>
 </div>
 </div>
-<br>
 <div class="banner" id="cbanner">
 
         <div class="container">
               <div class="row">
 
-                <div class="col-lg-5  col-md-5 col-sm-10 col-offset-sm-1">
+                <div class="col-lg-5  col-md-5 col-sm-10 col-sm-offset-1 col-xs-12" >
                   <h1>Contact Daniel</h1>
                   <form id="cform" method="post" name="myemailform" action="email.php">
                       <p>
@@ -218,26 +220,29 @@
                   frmvalidator.addValidation("email","email","Please enter a valid email address");
                   </script>
                 </div>
-                     <div class="col-lg-7 col-md-7 col-sm-10 col-offset-sm-1">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                      <ul class="list-inline banner-social-buttons" id="idbuttons"> <h2>Connect to Daniel Online:</h2>
-                        <li id="socbuttons">
+                        <div id="button-container">
+                        <li class="socbuttons">
                             <a href="https://twitter.com/dfanelli0109" class="btn btn-default btn-lg btnscl"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
-                        <li id="socbuttons">
+                        <li class="socbuttons">
                             <a href="https://github.com/dfanelli0109" class="btn btn-default btn-lg btnscl"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
-                        <li id="socbuttons">
+                        <li class="socbuttons">
                             <a href="https://www.linkedin.com/in/daniel-fanelli-4b186232/" class="btn btn-default btn-lg btnscl"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                         </li>
-                    </ul> </h2>
+                        </ul>
+
+                       <br>
+                       <br>
+                       <h1 id = "contact-or"> OR</h1>
+                        <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/daniel-r-fanellijr');return false;"><h2 id="book">Book a Meeting</h2></a>
+                      <!-- Calendly link widget end -->
 
 
                     <!-- Calendly link widget begin -->
-<div id = "tel">
-  <a href="tel:4076150533"><h1>Call Daniel</h1></a></div>
-
-  <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/daniel-r-fanellijr');return false;">Book your time with me today!</a>
-  <!-- Calendly link widget end -->
+                  </div>
                 </div>
 
 

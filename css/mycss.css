@@ -4,11 +4,56 @@
   margin-bottom: 40px;
 }
 
+
+@media (max-width:800px){
+  #contact2 {
+      background-color: black;
+      height: 50px;
+      width: 100%;
+      margin: 0px 0px 20px 0px;
+
+  }
+
+#cline {
+  animation-name: example1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  position: : relative;
+  padding 10px auto;
+  font-size: 1.7em;
+  color: white;
+}
+}
+
+@media (min-width:801px){
+#contact2 {
+    background-color: black;
+    height:60px;
+    width:100%;
+    margin: 0px 0px 20px 0px;
+    font-size: 2em;
+    color: white;
+}
+
+#cline {
+  animation-name: example1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+}
+
 @media (min-width: 300px){
   #about {
+    position: relative;
       height: 640px;
       border-bottom: 4px solid black;
       background-size: 100% 100%;
+
 
 
   }
@@ -20,11 +65,13 @@ text-align: center;
 }
 
 
+
 @media (min-width: 650px){
   #about {
       border-bottom: 4px solid black;
       height: 700px;
       background-size: 100% 100%;
+
   }
   #connect {
   text-align: center;
@@ -33,8 +80,11 @@ text-align: center;
 }
 
 
+
+
 #contact-or {
 text-align: center;
+color: black;
 }
 
 #book {
@@ -49,20 +99,28 @@ text-align: center;
   margin: 0px auto 50px auto;
   font-size: 1.4em;
   border: white 4px solid;
+  text-align: center;
 }
 
 #clientshdr {
       padding: 20px 0px 20px 90px;
-}
+      color: black;}
 
 input {
   color: black;
 }
 
+@media (min-width:300px){
 #button-container {
   width: 100%;
 }
-
+}
+@media (min-width:900px){
+#button-container {
+  width: 100%;
+  padding-left: 20%;
+}
+}
 a:hover {
   text-decoration: none;
   color: yellow;
@@ -84,16 +142,16 @@ p {
   #cbanner {
     padding: 0px 0px;
     color: black;
-  background-color: #DBAD21;
-    background-size: cover;
-    margin-top: 35px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }}
 
 @media (min-width:750px){
   #cbanner {
     padding: 15px 0px;
     color: black;
-  background-color: #c79700;
     background-size: cover;
     margin-top: 5px;
     height: 600px;
@@ -121,42 +179,45 @@ border: 4px solid black;
 
 
 @media (max-width: 600px){
-.socbuttons {
-  width: 30%;
-  margin: 10px 20px 5px 0px;
-  display: inline-block;
-}
+  .socbuttons {
+      width: 80%;
+      margin: 10px 20px 5px 20px;
+      display: inline-block;
+  }
 }
 @media (min-width: 601px){
 .socbuttons {
-  margin: 20px 10px 5px 75px;
+  margin: 20px 0% 5px 0%;
   display: inline-block;
-  width: 30%;
+  width: 35%;
+
 }
 }
 
 
 @media(max-width: 700px){
-#name {
-
-font-size: 2.0em;
-letter-spacing: 2px;
-  text-align: left;
-  width: 30%;
-  /* font-size: 1.3em; */
-  padding-top: 20%;
+  #name {
+     font-size: 2.0em;
+      letter-spacing: 2px;
+      text-align: left;
+      width: 100%;
+      margin-top: 20%;
+      background-color: rgba(179, 179, 179, 0.58);
 
   }
 
-#title {
-  font-family: 'Bitter', serif;
-  text-align: left;
-  font-size: 1.25em;
-  width: 40%;
-  letter-spacing: 2px;
-  color: black;
 
-}
+  #title {
+      font-family: 'Bitter', serif;
+      text-align: left;
+      font-size: 1.25em;
+      width: 100%;
+      letter-spacing: 2px;
+      color: black;
+      color: white;
+      background-color: rgba(16, 16, 16, 0.72);
+
+  }
 }
 
 @media (min-width: 701px){
@@ -175,9 +236,9 @@ background-color: rgba(179, 179, 179, 0.58);
   margin-bottom: 15px;
   text-align: left;
   width: 100%;
- background-color: transparent;
  padding-left: 15px;
  color: white;
+
  background-color: rgba(16, 16, 16, 0.72);
 }
 }
@@ -190,7 +251,6 @@ background-color: rgba(179, 179, 179, 0.58);
   font-weight: bolder;
   border: 0px;
   background-color: black;
-  display: none;
 }
 #navcolor {
   background-color: black;
@@ -234,7 +294,7 @@ background-color: rgba(179, 179, 179, 0.58);
 
 #hshot {
   width: 30%;
-  height: 250px;
+  height: auto;
 
 }
 .ind {
@@ -282,6 +342,7 @@ height: 230px;
     width: 100%;
     margin: 0px auto;
     background-color: white;
+    color: black;
 text-align: center;
 padding-top: 100px;
 border: 4px solid black;
@@ -293,6 +354,7 @@ height: 280px;
     width: 100%;
     margin: 0px auto;
 background-color: white;
+color: black;
 text-align: center;
 padding-top: 150px;
 border: 4px solid black;
@@ -334,7 +396,10 @@ border: 4px solid black;
 }}
 
 #body1 {
+  animation-name: example1;
+  animation-duration: 4s;
   font-family: 'Archivo Black', sans-serif;
+  background-color: #DCDCDC;
 }
 
 @media (min-width: 300px){
@@ -346,6 +411,10 @@ border: 4px solid black;
   }
 }
 
+#clientpg {
+  background-color: #DBAD21;
+  color: black;
+}
 @media (min-width:900px){
   #clientpg,#biopg, #clientpg,#cbanner {
   padding-top: 30px;
@@ -354,23 +423,33 @@ border: 4px solid black;
   }
 }
 
-@media (max-width: 899px){
-  #biocont {
-  background: url(../img/headshot.jpg) no-repeat center center;
-  background-size: 100% 100%;
-  height: 275px;
-  padding-bottom: 40px;
-  border: 3px solid black;
+#headshot1 {
+    width: 100%;
+    height: auto;
+    border: 3px groove black;
+}
 
+@media (max-width: 550px){
+  #biocont {
+  background-size: 100% 100%;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
 }}
 
+@media (min-width: 551px){
+  #biocont {
+    padding-left: 0px;
+    padding-right: 0px;
+  padding-bottom: 40px;
+
+}}
 @media (min-width: 900px){
   #biocont {
-  background: url(../img/headshot.jpg) no-repeat center center;
   background-size: 100% 100%;
-  height: 375px;
+  height: 550px;
   padding-bottom: 40px;
-  border: 3px solid black;
+
 
 }}
 
@@ -395,6 +474,8 @@ border: 4px solid black;
   height: auto;
   margin-top: 20px;
 }
+}
+
 @media (min-width: 700px){
 #bio {
   font-size: 1.2em;
@@ -407,6 +488,7 @@ border: 4px solid black;
 }
 }
 
+@media (min-width:701px){
 #btnscl {
   padding: 10px;
   font-size: 10px;
@@ -419,8 +501,24 @@ border: 4px solid black;
   font-size: 10px;
   padding: 10px;
 }
+}
 
-@media(max-width: 750px){
+@media (max-width:700px){
+  #btnscl {
+      padding: 10px;
+      font-size: 10px;
+      margin: 20px 20px 5px 20px;
+      width: 100%;
+  }
+#btnscl:hover {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 10px;
+}
+}
+
+@media(max-width: 700px){
 #idbuttons {
    margin-left: 0px;
 }}

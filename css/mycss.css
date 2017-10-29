@@ -1,7 +1,11 @@
-
+.bio-title {
+  text-align: center;
+  margin: 200px 0px;
+  color: white;
+}
 #clients1 {
   border: 3px groove grey;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 
@@ -11,43 +15,25 @@
       height: 50px;
       width: 100%;
       margin: 0px 0px 20px 0px;
-}
-  }
-
-  .bio-title {
-    color: black;
-    text-align: center;
-    font-size: 2.5em;
 
   }
 
-  span {
-    font-weight: bolder;
-    font-style: italic;
-  }
-
-  @media(min-width: 800px){
-    .bio-title {padding: 200px 0px 0px 0px;
-
-  }
-
-}
 
 #cline {
   animation-name: example1;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   text-align: center;
-  position: relative;
+  position: : relative;
   padding 10px auto;
-
-
+  font-size: 1.7em;
+  color: white;
 }
-
+}
 
 @media (min-width:801px){
 #contact2 {
-
+    background-color: black;
     height:60px;
     width:100%;
     margin: 0px 0px 20px 0px;
@@ -61,16 +47,15 @@
   animation-iteration-count: infinite;
   position: relative;
   text-align: center;
-  margin: 0px auto;
   padding: 10px;
-
+  color: white;
 }
 }
 
 @media (min-width: 300px){
   #about {
     position: relative;
-      height: 640px;
+      height: 100%;
       border-bottom: 4px solid black;
       background-size: 100% 100%;
 
@@ -84,14 +69,12 @@ text-align: center;
 }
 }
 
-#copy {
-  text-align: center;
-}
+
 
 @media (min-width: 650px){
   #about {
       border-bottom: 4px solid black;
-      height: 700px;
+      height: 100%;
       background-size: 100% 100%;
 
   }
@@ -120,6 +103,7 @@ color: black;
   height: 475px;
   margin: 0px auto 50px auto;
   font-size: 1.4em;
+  border: white 4px solid;
   text-align: center;
 }
 
@@ -144,7 +128,7 @@ input {
 }
 a:hover {
   text-decoration: none;
-  color: yellow;
+  color: #00F00;
 }
 
 #tel1:hover {
@@ -171,7 +155,7 @@ p {
 
 @media (min-width:750px){
   #cbanner {
-    padding: 15px 0px;
+    padding: 0px 0px;
     color: black;
     background-size: cover;
     margin-top: 5px;
@@ -206,11 +190,15 @@ border: 4px solid black;
       display: inline-block;
   }
 }
+
+#socbuttons2 {
+  width: 35%;
+}
 @media (min-width: 601px){
 .socbuttons {
   margin: 20px 0% 5px 0%;
   display: inline-block;
-  width: 35%;
+  width: 20%;
 
 }
 }
@@ -254,10 +242,10 @@ background-color: rgba(179, 179, 179, 0.58);
 }
 #title {
   font-size: 2em;
-  margin-bottom: 15px;
+  margin: 15px 0px 15px 0px;
+  padding: 0px;
   text-align: left;
   width: 100%;
- padding-left: 15px;
  color: white;
 
  background-color: rgba(16, 16, 16, 0.72);
@@ -279,11 +267,12 @@ background-color: rgba(179, 179, 179, 0.58);
 
 .init {
   font-family: 'Bowlby One SC', sans-serif;
-  color: #DBAD21;
+  color: red;
 }
 
 .navlinks:hover {
   background-color: white;
+
 }
 
 .navlinks a {
@@ -303,7 +292,8 @@ background-color: rgba(179, 179, 179, 0.58);
 }
 
 .navbar-default .navbar-nav > li > .pglink:hover {
-  color: yellow;
+  color: red;
+  background-color: white;
 }
 #navbar1 {
   margin-bottom: 25px;
@@ -315,6 +305,7 @@ background-color: rgba(179, 179, 179, 0.58);
 
 #hshot {
   width: 30%;
+  max-width: 600px;
   height: auto;
 
 }
@@ -420,28 +411,48 @@ border: 4px solid black;
   animation-name: example1;
   animation-duration: 4s;
   font-family: 'Archivo Black', sans-serif;
-  background-color: #DCDCDC;
+  background-color: white;
 }
 
-@media (min-width: 300px){
-  #clientpg,#biopg, #clientpg {
-    height: 450px;
+@media (max-width: 899px){
+  #clientpg,#biopg, #clientpg, #workspg {
+    min-height: 100%;
     padding-top: 30px;
     clear: both;
 
   }
 }
 
+
+
+#proj {
+  margin-top: 30px;
+}
 #clientpg {
   background-color: #DBAD21;
   color: black;
 }
 @media (min-width:900px){
-  #clientpg,#biopg, #clientpg,#cbanner {
-  padding-top: 30px;
-    height: 720px;
+  #clientpg,#biopg, #clientpg,#cbanner, #workspg {
+    min-height: 100%;
     clear: both
   }
+}
+
+#workspg {
+    background-image: url('intro-bg.jpg') no-repeat cover;
+    background-size: cover;
+    background-color: red;
+    background-size: 100% 100%;
+}
+#myCarousel {
+  max-height: 800px;
+    width: 100%;
+}
+#biopg {
+  background-color: rgba(23, 23, 23, 1);
+  color: white;
+  min-height: 100%;
 }
 
 #headshot1 {
@@ -452,7 +463,6 @@ border: 4px solid black;
 
 @media (max-width: 550px){
   #biocont {
-  background-size: 100% 100%;
   padding-bottom: 40px;
   padding-left: 0px;
   padding-right: 0px;
@@ -475,16 +485,16 @@ border: 4px solid black;
 }}
 
 @media (min-width: 300px){
-  #bioheader {
+  #bioheader, #worksheader {
     font-size: 2em;
       padding: 20px 0px 20px 20px;
 
   }
 }
 @media (min-width: 900px){
-  #bioheader {
+  #bioheader, #worksheader, #clientshdr {
     font-size: 2em;
-      padding: 40px 0px 20px 90px;
+      padding: 70px 0px 10px 30px;
 
   }
 }
